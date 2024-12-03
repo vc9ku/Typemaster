@@ -95,19 +95,19 @@ body {
 
 .aligned-images {
     display: flex;
-    justify-content: space-between;
 }
 
 
 
 .keyboard-presentation {
-    width: 90%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .svg-icon {
@@ -118,12 +118,193 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .mechanical-wireless {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mechanical-wireless-title {
     font-family: "Barlow", sans-serif;
     color: #162542;
     font-weight: 900;
     font-size: 32px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.image-phone-and-keyboard, .image-glass-and-keyboard {
+    height: 193px;
+    border-radius: 16px;
+    margin-bottom: 75px;
+}
+
+
+.image-glass-and-keyboard {
+    margin-left: 16px;
+}
+
+
+
+.presentation-title {
+    font-family: "Barlow", sans-serif;
+    color: #162542;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.presentation-paragraph {
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+    margin-bottom: 64px;
+}
+
+.mechanical-wireless-paragraph {
+    margin-bottom: 110px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    color: #7B8BAD;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 50px;
+}
+
+footer span {
+    font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        width: 80%;
+        margin: 40px auto 80px;
+    }
+
+    .pre-order-header {
+        padding: 16px 24px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .informations {
+        width: 70%;
+        margin: 0 auto 80px;
+    }
+
+    .informations h1 {
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    .informations-paragraph {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .informations-complement {
+        justify-content: flex-start;
+    }
+
+    .informations-pre-order {
+        padding: 16px 24px;
+        font-size: 18px;
+        margin-right: 24px;
+    }
+
+    .informations-relase-date {
+        font-size: 18px;
+    }
+
+    .content-images {
+        text-align: center;
+    }
+
+    .keyboard-image {
+        width: 80%;
+        margin: 0 auto 40px;
+        border-radius: 12px;
+    }
+
+    .aligned-images {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .image-phone-and-keyboard, .image-glass-and-keyboard {
+        height: 250px;
+        border-radius: 12px;
+    }
+
+    .mechanical-wireless {
+        width: 60%;
+    }
+
+    .mechanical-wireless-title {
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+    .mechanical-wireless-paragraph {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 80px;
+    }
+
+    .presentations {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .presentation-title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .presentation-paragraph {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    footer {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        width: 70%;
+    }
+
+    .informations {
+        width: 60%;
+    }
+
+    .mechanical-wireless {
+        width: 50%;
+    }
+
+    .presentations {
+        gap: 60px;
+    }
 }
