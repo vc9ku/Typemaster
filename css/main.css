@@ -95,6 +95,7 @@ body {
 
 .aligned-images {
     display: flex;
+    margin-bottom: 75px;
 }
 
 
@@ -140,10 +141,24 @@ body {
     text-transform: uppercase;
 }
 
+.image-phone-and-keyboard-wrapper {
+    position: relative;
+}
+
+.image-phone-and-keyboard-wrapper::before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    background-color: #F1671877;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
 .image-phone-and-keyboard, .image-glass-and-keyboard {
     height: 193px;
     border-radius: 16px;
-    margin-bottom: 75px;
 }
 
 
@@ -160,6 +175,7 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .presentation-paragraph {
@@ -169,6 +185,7 @@ body {
     line-height: 26px;
     color: #7B8BAD;
     margin-bottom: 64px;
+    text-align: center;
 }
 
 .mechanical-wireless-paragraph {
@@ -191,120 +208,8 @@ footer span {
     font-weight: 500;
 }
 
-@media (min-width: 1024px) {
-    .header {
-        width: 80%;
-        margin: 40px auto 80px;
-    }
 
-    .pre-order-header {
-        padding: 16px 24px;
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .informations {
-        width: 70%;
-        margin: 0 auto 80px;
-    }
-
-    .informations h1 {
-        font-size: 64px;
-        line-height: 70px;
-    }
-
-    .informations-paragraph {
-        font-size: 18px;
-        line-height: 30px;
-    }
-
-    .informations-complement {
-        justify-content: flex-start;
-    }
-
-    .informations-pre-order {
-        padding: 16px 24px;
-        font-size: 18px;
-        margin-right: 24px;
-    }
-
-    .informations-relase-date {
-        font-size: 18px;
-    }
-
-    .content-images {
-        text-align: center;
-    }
-
-    .keyboard-image {
-        width: 80%;
-        margin: 0 auto 40px;
-        border-radius: 12px;
-    }
-
-    .aligned-images {
-        justify-content: center;
-        gap: 24px;
-    }
-
-    .image-phone-and-keyboard, .image-glass-and-keyboard {
-        height: 250px;
-        border-radius: 12px;
-    }
-
-    .mechanical-wireless {
-        width: 60%;
-    }
-
-    .mechanical-wireless-title {
-        font-size: 48px;
-        line-height: 54px;
-    }
-
-    .mechanical-wireless-paragraph {
-        font-size: 18px;
-        line-height: 30px;
-        margin-bottom: 80px;
-    }
-
-    .presentations {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .presentation-title {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .presentation-paragraph {
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    footer {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
+@media screen and (min-width: 768px) {
+    
 }
 
-@media (min-width: 1440px) {
-    .header {
-        width: 70%;
-    }
-
-    .informations {
-        width: 60%;
-    }
-
-    .mechanical-wireless {
-        width: 50%;
-    }
-
-    .presentations {
-        gap: 60px;
-    }
-}
