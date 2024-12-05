@@ -98,6 +98,11 @@ body {
     margin-bottom: 75px;
 }
 
+.presentations {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 .keyboard-presentation {
@@ -154,7 +159,9 @@ body {
     z-index: 1;
     height: 100%;
     width: 100%;
+    border-radius: 0 16px 16px 0;
 }
+
 
 .image-phone-and-keyboard, .image-glass-and-keyboard {
     height: 193px;
@@ -210,6 +217,31 @@ footer span {
 
 
 @media screen and (min-width: 768px) {
-    
+    .informations-wrapper {
+        width: 95%;
+        margin-left: auto;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .informations-relase-date {
+        margin-left: 32px;
+    }
+
+    .keyboard {
+        height: 425px;
+        width: 478px;
+        border-radius: 8px;
+        margin-left: 88px;
+    }
+
+    .keyboard-image {
+        width: unset;
+        height: 100%;;
+    }
+
+    .informations {
+        margin-right: 70px;
+    }
 }
 
