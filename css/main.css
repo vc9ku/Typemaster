@@ -243,5 +243,17 @@ footer span {
     .informations {
         margin-right: 70px;
     }
+
+    .aligned-images {
+        margin-left: 32px;
+    }
+
+    .image-phone-and-keyboard, .image-phone-and-keyboard-wrapper::before {
+        border-radius: 16px;
+    }
+    
+    .keyboard-presentations {
+        flex-direction: ;
+    }
 }
 
